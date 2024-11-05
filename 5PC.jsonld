@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "5PC"
+    },
+    "motivations": {
+      "@value": "I want to become Drep so that I can make my valuable contribution to the development of the Cardano ecosystem. With 8 years of experience in the crypto market and building a community of 55,000 investors, I believe I can make valuable contributions to the ecosystem."
+    },
+    "objectives": {
+      "@value": "I am building a community of Vietnamese investors who believe in the future of sustainable development of the Cardano ecosystem. My community and I want to contribute our voices and values ​​to participate in the governance and ecosystem development process, thereby building a strong Cardano ecosystem."
+    },
+    "paymentAddress": {
+      "@value": "addr1q87qpdt4ra9knnukmjn3sajkda76s43jlwv73y77fjy2v8usdk64y9ncfzvyt4jewurvf80dhllxvte47vpktndzv0xsrsvkpw"
+    },
+    "qualifications": {
+      "@value": "I joined the CR role at fund11 and fund12. Sponsored 2 proposals at fund11 and fund12."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "I am an ADA holder and am working on blockchain education in Vietnam."
+        },
+        "uri": {
+          "@value": "https://www.youtube.com/@5phutcrypto"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "My website for community "
+        },
+        "uri": {
+          "@value": "https://5money.vn/"
+        }
+      }
+    ]
+  }
+}
